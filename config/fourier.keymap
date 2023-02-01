@@ -47,16 +47,16 @@
 // ----------------------------------------------      ----------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |              |  Y  |  U  |  I  |  O  |  P  |     |  BKSP  |
 // | TAB    |  A  |  S  |  D   |  F  |  G  |             |  H  |  J  |  K  |  L  |  '  |    ENTER   |
-// | SHIFT     |  Z  |  X  |  C  |  V  |  B  |              |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |
-// | LCTRL   | LALT| LGUI |   SPACE        |             |   SPACE/L1  | L2 |  RGUI  |  RALT  |RCTRL|
+// | SHIFT     |  Z  |  X  |  C  |  V  |  B  |              |  N  |  M  |  ,  |  .  |  /  |   L2    |
+// | LCTRL   | LALT| LGUI |   SPACE        |             |   SPACE/L1  | SAW |  RGUI  |  RALT  |RCTRL|
 // -------------------------------------------        -----------------------------------------------
 
         default_layer {
             bindings = <
     &kp ESC   &kp Q    &kp W    &kp E &kp R     &kp T /**/ &kp Y &kp U &kp I     &kp O     &kp P    &kp BSPC  &kp BSPC
     &kp TAB   &kp A    &kp S    &kp D &kp F     &kp G /**/ &kp H &kp J &kp K     &kp L     &kp APOS &kp ENTER
-    &kp LSHFT &kp Z    &kp X    &kp C &kp V     &kp B /**/ &kp N &kp M &kp COMMA &kp DOT   &kp UP   &kp RSHFT
-    &kp LCTRL &kp LALT &kp LGUI &none &kp SPACE       /**/ &lt 1 SPACE       &mo 2     &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp LSHFT &kp Z    &kp X    &kp C &kp V     &kp B /**/ &kp N &kp M &kp COMMA &kp DOT   &kp UP   &mo 2
+    &kp LCTRL &kp LALT &kp LGUI &none &lt 1 SPACE     /**/ &lt 1 SPACE &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
